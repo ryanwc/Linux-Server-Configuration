@@ -67,7 +67,7 @@ install apache
 42  sudo psql  
 43  create role root  
 ```  
-install postgresql and create a role
+install postgresql and create a role (remote access disabled by default)  
 
 ```
 50  sudo apt-get install git-all  
