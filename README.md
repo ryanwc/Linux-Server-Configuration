@@ -32,50 +32,50 @@ Here is an exerpt of the .bash_history showing relevant changes:
 ```  
 create a user called grader and give it sudo
 
-`
+```
    24  sudo apt-get update  
    25  sudo apt-get upgrade  
-` 
+```  
 update / upgrade software
 
-`
+```
    26  sudo dpkg-reconfigure tzdata  
-` 
+```  
 set the local time to UTC
 
-`
+```
    28  sudo nano /etc/ssh/sshd_config  
-` 
+```  
 configure ssh
 
-`
+```
    29  sudo ufw allow 2200  
    30  sudo ufw allow 80  
    31  sudo ufw allow 123  
    32  sudo ufw enable  
    33  sudo ufw status  
-` 
+```  
 configure and enable firewall
 
-` 
+``` 
    36  sudo apt-get install apache2  
-` 
+```  
 install apache
 
-`
+```
    40  apt-get install postgresql-9.3  
    42  sudo psql  
    43  create role root  
-` 
+```  
 install postgresql and create a role
 
-`
+```
    50  sudo apt-get install git-all  
    56  git clone https://github.com/ryanwc/RestaurantManager  
-` 
+```  
 install git and clone the app to host
 
-`
+```
    59  sudo apt-get install libapache2-mod-wsgi python-dev  
    60  sudo a2enmod wsgi  
    61  sudo apt-get install python-pip  
@@ -83,10 +83,10 @@ install git and clone the app to host
    63  sudo virtualenv restman  
    64  source restman/bin/activate  
    65  sudo pip install Flask  
-` 
+```  
 install and set config to let ubuntu/apache serve a flask app
 
-`
+```
    72  cp -R RestaurantManager/restman /var/www  
    76  rm -r restman  
    78  sudo nano instance/config.py  
@@ -102,10 +102,10 @@ install and set config to let ubuntu/apache serve a flask app
   116  sudo a2ensite RestaurantManager.conf  
   117  sudo a2enconf RestaurantManager.conf  
   119  sudo a2dissite 000-default.conf  
-` 
+```  
 various changes to get app working
 
-`
+```
   171  sudo apt-get install python-psycopg2  
   173  sudo nano /etc/hostname  
   174  sudo nano /etc/hosts  
@@ -124,17 +124,17 @@ various changes to get app working
   391  sudo pip install werkzeug==0.8.3  
   392  sudo pip install flask==0.9  
   393  sudo pip install Flask-Login==0.1.3  
-` 
+```  
 various changes to get postgresql working with the app (including downgrading some software)
 note the app was originally writted for sqlite, migrating was painless
 
-`
+```
   408  chmod 777 pics  
-` 
+```  
 enable writing and reading from to pics folder so the server can store and serve uploaded pics
 probably not the best security policy but it works for this project
 
-`
+```
   481  sudo nano /etc/ssh/sshd_config  
   483  sudo visudo  
   485  su grader  
@@ -142,12 +142,12 @@ probably not the best security policy but it works for this project
   492  passwd grader  
   493  passwd  
   509  sudo adduser grader sudo  
-` 
+```  
 ensure grader has sudo and ssh is properly working
 
-`
+```
   516  sudo nano /etc/ssh/sshd_config  
-` 
+```  
 disable remote login for root
 
 ## List of Third-Party Resources
