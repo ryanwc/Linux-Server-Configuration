@@ -24,12 +24,12 @@ http://ec2-52-38-172-72.us-west-2.compute.amazonaws.com/
 
 Here is an exerpt of the .bash_history showing relevant changes:
 
-`
+```
 6  sudo adduser grader  
 10  cd sudoers.d  
 12  sudo nano README  
 15  sudo nano sudoers  
-`  
+```  
 create a user called grader and give it sudo
 
 `
